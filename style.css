@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    margin: 20px;
+}
+
+#image {
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #888;
+    margin: 20px auto;
+    background-color: #777;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.preview {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.preview:hover {
+    border-color: #007bff;
+}

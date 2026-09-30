@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung hiển thị ảnh lớn -->
+    <div id="image">
+        Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <!-- Các ảnh nhỏ (Thumbnails) -->
+    <div class="gallery">
+        <img class="preview" 
+             src="https://picsum.photos/id/1015/600/400" 
+             alt="Cảnh thiên nhiên núi rừng" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/1018/600/400" 
+             alt="Rừng cây hoang sơ" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/1025/600/400" 
+             alt="Chú chó nhỏ đáng yêu" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()">
+    </div>
+
+    <!-- Liên kết tệp JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
